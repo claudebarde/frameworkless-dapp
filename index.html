@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+    <title>Frameworkless Dapp</title>
+
+    <link rel="icon" type="image/png" href="taquito.png" />
+    <link rel="stylesheet" href="main.css" />
+
+    <script
+      defer
+      src="https://unpkg.com/@taquito/taquito@9.1.1/dist/taquito.min.js"
+      crossorigin="anonymous"
+      integrity="sha384-88WWFdG2fJCzg/oZNPz16DSNCVdovB/K2BOzg5Eot0WdG3mk/fZ3qyXrhmjTIQtO"
+    ></script>
+    <script
+      defer
+      src="https://unpkg.com/@taquito/beacon-wallet@8.1.0/dist/taquito-beacon-wallet.umd.js"
+    ></script>
+    <script defer src="index.js"></script>
+  </head>
+
+  <body>
+    <h1>No Framework Dapp</h1>
+    <h4>This dapp works in pure vanilla JavaScript with Taquito and Beacon</h4>
+    <br />
+    <button id="connect-wallet">Connect</button>
+    <br /><br />
+    <div class="container">
+      <div>
+        <h3>Send tez</h3>
+      </div>
+      <div>
+        Amount to send?
+        <input type="text" />
+      </div>
+      <div>
+        Recipient's address:
+        <input type="text" />
+      </div>
+      <div>
+        <button id="send-tez">Send</button>
+      </div>
+    </div>
+    <br /><br />
+    <div class="container">
+      <div>
+        <h3>Update contract</h3>
+      </div>
+      <div>
+        <div>Current value stored in the contract:</div>
+        <div>0</div>
+      </div>
+      <div>
+        Change the value
+        <input type="text" />
+      </div>
+      <div>
+        <button id="update-contract">Update</button>
+      </div>
+    </div>
+  </body>
+</html>
